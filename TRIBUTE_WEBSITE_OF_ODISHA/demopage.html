@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            text-decoration: none;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+        .navbar{
+            padding: 5px;
+            background-color: grey;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .navcontent{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo a{
+            font-size: 30px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li {
+            display: inline-block;
+            list-style: none;
+        }
+        li a{
+            color: white;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        button{
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 15px;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navcontent">
+            <div class="logo">
+                <a href="#" id="l">LOGO</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <a href="#"><button>SignUp</button></a>
+                <a href="#"><button>SignIn</button></a>
+            </ul>
+            
+        </div>
+    </nav>
+</body>
+</html>
