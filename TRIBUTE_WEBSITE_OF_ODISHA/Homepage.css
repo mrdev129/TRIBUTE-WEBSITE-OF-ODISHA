@@ -301,6 +301,10 @@ img {
 }
 
 .content_heading h1{
+  font-family: "Arial", sans-serif;	
+  font-style: normal;	
+  font-variant: normal;	
+  font-weight: 600;	
   color: #084C61;
   font-size: 60px;
   height:120px;
@@ -317,8 +321,17 @@ img {
   text-align:inherit;
   font-size: 30px;
   font-weight: inherit;
+  height:350px;
 
 }
-.content_heading_description{
-  height:500px;
+.top_tourist_heading{
+  font-family: "Times New Roman", sans-serif;	
+  font-size: 60px;	
+  font-style: normal;	
+  font-variant: normal;	
+  font-weight: 500;	
+  letter-spacing: normal;	
+  line-height: 34px;	
+  color: rgb(8, 79, 107);
+  height:350;
 }
