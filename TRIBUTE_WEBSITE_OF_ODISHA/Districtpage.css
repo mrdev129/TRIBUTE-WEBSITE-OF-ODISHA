@@ -35,7 +35,8 @@ ul li:hover{
     color:red;
     /* text-decoration: 2px underline red; */
 }
-#home{
+#home a{
+  color:black;
     text-decoration: none;
 }
 ul img{
