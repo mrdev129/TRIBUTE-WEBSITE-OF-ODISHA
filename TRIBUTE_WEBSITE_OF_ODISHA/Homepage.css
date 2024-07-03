@@ -78,6 +78,61 @@ ul li:hover .dropdown{
 
 }
 
+/* HomePage CSS */
+
+.main{
+  display: grid;
+  grid-template-rows: repeat(23,max-width(3000px));
+  place-content: center;
+  place-items: center;
+  row-gap:20px;
+}
+/* .front_image {
+  height:750px;
+} */
+.front_image img {
+  height: 900px;
+  width:  2500px;
+}
+
+.content_heading h1{
+  font-family: "Arial", sans-serif;	
+  font-style: normal;	
+  font-variant: normal;	
+  font-weight: 600;	
+  color: #084C61;
+  font-size: 60px;
+  height:120px;
+}
+#odisha{
+  color: orange;
+}
+#odisha :hover {
+  color:#084C61;
+}
+.content_heading_description p{
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width:2500px ;
+  text-align:justify;
+  font-size: 30px;
+  font-weight: 300;
+  height:250px;
+
+}
+.top_tourist_heading{
+  font-family: "Times New Roman", sans-serif;	
+  font-size: 60px;	
+  font-style: normal;	
+  font-variant: normal;	
+  font-weight: 500;	
+  letter-spacing: normal;	
+  line-height: 34px;	
+  color: rgb(8, 79, 107);
+  height:150px;
+}
+
+
+
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
@@ -128,14 +183,19 @@ img {
 /*=============== CARD ===============*/
 .container {
   display: grid;
-  place-items: center;
-  margin-inline: 1.5rem;
-  padding-block: 5rem;
+  justify-content: center;
+  align-items: start;
+  width:2000px;
+  height: 10px;
+  /* margin-inline: 1.5rem; */
+  /* padding-block: 5rem; */
 }
 
 .card__container {
-  display: grid;
-  row-gap: 3.5rem;
+  display: flex;
+  
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 .card__article {
@@ -144,7 +204,8 @@ img {
 }
 
 .card__img {
-  width: 328px;
+  width: 500px;
+  height: 250px;
   border-radius: 1.5rem;
 }
 
@@ -163,22 +224,20 @@ img {
   transition: opacity 1s 1s;
 }
 
-.card__description {
-  display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: .25rem;
-}
+
 
 .card__title {
   font-size: var(--h2-font-size);
   font-weight: 500;
+  font-size: 50px;
   color: var(--title-color);
   margin-bottom: .75rem;
 }
 
 .card__button {
   text-decoration: none;
-  font-size: var(--small-font-size);
+  font-size: 30px;
+  /* font-size: var(--small-font-size); */
   font-weight: 500;
   color: var(--first-color);
 }
@@ -268,63 +327,24 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .container {
-    height: 100vh;
+    height: 430px;
   }
 
   .card__container {
     grid-template-columns: repeat(10, 1fr);
   }
   .card__img {
-    width: 348px;
+    width: 600px;
+    height:350px;
   }
   .card__data {
-    width: 316px;
+    width: 390px;
+    height:180px;
     padding-inline: 2.5rem;
   }
 }
 
-/* HomePage CSS */
-
-.main{
-  display: grid;
-  grid-template-rows: repeat(5,max-width(1800px));
-  place-content: center;
-  place-items: center;
-  row-gap:30px;
-}
-.front_image {
-  height:750px;
-}
-.front_image img {
-  height: 700px;
-  width:  1800px;
-}
-
-.content_heading h1{
-  font-family: "Arial", sans-serif;	
-  font-style: normal;	
-  font-variant: normal;	
-  font-weight: 600;	
-  color: #084C61;
-  font-size: 60px;
-  height:120px;
-}
-#odisha{
-  color: orange;
-}
-#odisha :hover {
-  color:#084C61;
-}
-.content_heading_description p{
-  font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  max-width:1800px ;
-  text-align:inherit;
-  font-size: 30px;
-  font-weight: inherit;
-  height:350px;
-
-}
-.top_tourist_heading{
+.title_2{
   font-family: "Times New Roman", sans-serif;	
   font-size: 60px;	
   font-style: normal;	
@@ -333,5 +353,304 @@ img {
   letter-spacing: normal;	
   line-height: 34px;	
   color: rgb(8, 79, 107);
-  height:350;
+  height:100px;
+}
+.title_2_description p{
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width:2500px ;
+  text-align:justify;
+  font-size: 30px;
+  font-weight: 300;
+  height:250px;
+}
+.title_3_description p{
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width:2500px ;
+  text-align:justify;
+  font-size: 30px;
+  font-weight: 300;
+  height:250px;
+}
+.title_3{
+  font-family: "Times New Roman", sans-serif;	
+  font-size: 60px;	
+  font-style: normal;	
+  font-variant: normal;	
+  font-weight: 500;	
+  letter-spacing: normal;	
+  line-height: 34px;	
+  color: rgb(8, 79, 107);
+  height:100px;
+}
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(82, 60%, 28%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: hsl(0, 0%, 95%);
+  --container-color: hsl(0, 0%, 100%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.container2 {
+  display: grid;
+  justify-content: center;
+  align-items: start;
+  width:2000px;
+  height: 10px;
+  /* margin-inline: 1.5rem; */
+  /* padding-block: 5rem; */
+}
+
+.card__container2 {
+  display: flex;
+  
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.card__article2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img2 {
+  width: 500px;
+  height: 250px;
+  border-radius: 1.5rem;
+}
+
+.card__data2 {
+  width: 280px;
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+
+
+.card__title2 {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  font-size: 50px;
+  color: var(--title-color);
+  margin-bottom: .75rem;
+}
+
+.card__button2 {
+  text-decoration: none;
+  font-size: 30px;
+  /* font-size: var(--small-font-size); */
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.card__button2:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article2:hover .card__data2 {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.card__article2:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article2:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article2:not(:hover) .card__data2 {
+  animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container2 {
+    margin-inline: 1rem;
+  }
+
+  .card__data2 {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__container2 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .container2 {
+    height: 780px;
+  }
+
+  .card__container2 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .card__img2 {
+    width: 500px;
+    height:700px;
+  }
+  .card__data2 {
+    width: 350px;
+    height:180px;
+    padding-inline: 2.5rem;
+  }
+}
+.footer{
+  display: grid;
+  grid-template-rows: repeat(10,max-width(3000px));
+  place-content: center;
+  place-items: center;
+  row-gap:20px;
+}
+.table,tr,td{
+  /* border:5px solid black; */
+  height:100px;
+  width:2000px;
+  border-collapse: collapse;
+  
+}
+
+.table,td{
+  padding-left: 10px;
+  background-color: palegoldenrod;
+}
+.i1{
+  background-color: rgb(197, 189, 189);
+  font-weight: 600;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.i2{
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.fr{
+  font-size: 30px;
+}
+.table2 tr td{
+  background-color: rgb(55, 74, 94);
+  color:#fff;
+  display:flex;
+  justify-content: space-around;
+  align-items: start;
+  height: 500px;
+  padding-top: 50px;
+}
+.ful{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.ful li a{
+  text-decoration: none;
+  color:white;
+}
+.flogo{
+  margin: 0;
+  padding: 0;
+}
+.table2 .h h2{
+  color:#fff;
+  font-size: 40px;
 }
