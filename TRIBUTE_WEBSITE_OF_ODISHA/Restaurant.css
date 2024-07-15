@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.un{
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    background-color: peachpuff;
+}
+
+.navigationsection{
+  display: grid ;
+  grid-template-rows: repeat(1);
+  row-gap: 10px;
+}
+
+.un #title:hover{
+  color: blue;
+}
+
+#title {
+    color:black;
+}
+
+ul li {
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color:black;
+}
+ul li:hover{
+    /* background-color: green; */
+    color:red;
+    /* text-decoration: 2px underline red; */
+}
+#home{
+    text-decoration: none;
+}
+ul img{
+    margin: 8px;
+    height: 100px;
+    width:  100px;
+}
+.dropdown{
+    display: none;
+    color:black;
+}
+ul li:hover .dropdown{
+    text-decoration: none;
+    display: block;
+    color: red;
+    position: absolute;
+    margin-left: -0.53cm;
+    margin-top: 0.52cm ;
+    
+}
+.dropdown ul{
+    margin: 0;
+    padding: 0;
+}
+.dropdown ul li {
+    display: block;
+}
+.heading h1{
+    font-weight: 600px;
+    display: flex;
+    justify-content: center;
+    color:rgb(5, 84, 117);
+    font-size: 50px;
+
+}
+
+/* HomePage CSS */
+
+.main{
+  display: grid;
+  grid-template-rows: repeat(23,max-width(3000px));
+  place-content: center;
+  place-items: center;
+  row-gap:20px;
+}
+/* .front_image {
+  height:750px;
+} */
+.front_image img {
+  height: 900px;
+  width:  2500px;
+}
+
+.content_heading h1{
+  margin:100px;
+  font-family: "Arial", sans-serif;	
+  font-style: normal;	
+  font-variant: normal;	
+  font-weight: 600;	
+  color: #084C61;
+  font-size: 100px;
+  height:80px;
+}
+#odisha{
+  color: orange;
+}
+#odisha :hover {
+  color:#084C61;
+}
+.content_heading_description p{
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width:2500px ;
+  text-align:justify;
+  font-size: 30px;
+  font-weight: 300;
+  height:250px;
+}
+.top_tourist_heading{
+  font-family: "Times New Roman", sans-serif;	
+  font-size: 70px;	
+  font-style: normal;	
+  font-variant: normal;	
+  font-weight: 500;	
+  letter-spacing: normal;	
+  line-height: 34px;	
+  color: rgb(8, 79, 107);
+  height:50px;
+}
+.bootimage{
+  height:500px;
+  width:100%;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+.boothead a{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+.boothead a:hover{
+  color:red;
+  
+}
+.boothead{
+  margin-bottom: 50px;
+}
+.bootpara{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-align: justify;
+  font-size: 30px;
+  line-height: 50px;
+  word-spacing: 0px;
+}
+.readmore{
+  height:100px;
+  width:300px;
+  padding: 20px;
+  text-decoration: none;
+  background-color: rgb(77, 77, 234);
+  color: white;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:40px;
+  text-align: center;
+
+}
+.readmore:hover{
+  font-weight: bold;
+  background-color: red;
+  color: black;
+
+}
+#rayagada{
+  margin-top: 121px;
+}
+
+.footer{
+  display: grid;
+  grid-template-rows: repeat(10,max-width(3000px));
+  place-content: center;
+  place-items: center;
+  row-gap:20px;
+}
+.table,tr,td{
+  /* border:5px solid black; */
+  height:100px;
+  width:2500px;
+  border-collapse: collapse;
+  
+}
+
+.table,td{
+  padding-left: 10px;
+  background-color: palegoldenrod;
+}
+.i1{
+  background-color: rgb(197, 189, 189);
+  font-weight: 600;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.i2{
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.fr{
+  font-size: 30px;
+}
+.table2 tr td{
+  background-color: rgb(55, 74, 94);
+  color:#fff;
+  display:flex;
+  justify-content: space-around;
+  align-items: start;
+  height: 500px;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+.ful{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.ful li a{
+  text-decoration: none;
+  color:white;
+}
+.flogo{
+  margin: 0;
+  padding: 0;
+}
+.table2 .h h2{
+  color:#fff;
+  font-size: 40px;
+}
