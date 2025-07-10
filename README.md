@@ -25,11 +25,6 @@ TRIBUTE-WEBSITE-OF-ODISHA/
 ├── images/
 └── README.md
 
-
-## 📸 Screenshots
-
-> *(You can upload screenshots of your project interface here for visual context)*
-
 ## 💡 Learnings
 
 - Developed hands-on experience with responsive layouts
@@ -45,10 +40,6 @@ TRIBUTE-WEBSITE-OF-ODISHA/
 ## 📬 Feedback
 
 If you have any suggestions or feedback, feel free to reach out or raise an issue.
-
----
-
-> 🔗 **Live Demo (Optional)**: *Add GitHub Pages/Netlify link if deployed*
 
 ## 📄 License
 
